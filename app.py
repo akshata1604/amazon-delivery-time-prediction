@@ -2,10 +2,12 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import joblib
+import os
 
 @st.cache_resource
 def load_model():
-    return joblib.load("randomforestregg.pkl")
+    model_path = os.path.join(os.path.dirname(__file__), "randomforestregg.pkl")
+    return joblib.load(model_path)
 
 model = load_model()
 
