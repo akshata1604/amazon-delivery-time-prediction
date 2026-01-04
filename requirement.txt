@@ -7,7 +7,7 @@ scikit-learn
 pickle-mixin
 matplotlib
 seaborn
-joblib
+
 
 
 
