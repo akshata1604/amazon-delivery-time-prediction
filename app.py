@@ -7,7 +7,7 @@ import os
 
 @st.cache_resource
 def load_model():
-    return joblib.load("reg.joblib")
+    return joblib.load("rf_model.joblib")
 
 model = load_model()
 
