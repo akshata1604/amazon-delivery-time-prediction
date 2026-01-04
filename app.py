@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import pickle
 
-@st.cache_resource
 def load_model():
     with open("randomforestregg.pkl", "rb") as f:
         return pickle.load(f)
